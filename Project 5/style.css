@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(16, 16, 16);
+    font-family: sans-serif;
+}
+
+.container a{
+    text-decoration: none;
+    color: antiquewhite;
+    border: 2px  antiquewhite;
+    padding: 2rem 5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.container a:before {
+    content: "DOWNLOAD";
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: antiquewhite;
+    transform: translateY(-100%);
+    transition: ease-out 0.5s;
+    /* center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container a:hover:before {
+    transform: translateY(0%);
+}
+
+.container2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgb(131, 246, 246);
+    
+}
+
+.container2 a{
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    background-color: rgb(146, 87, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.container2 a::before {
+    content: "JAN 05";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 0, 0) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+
+.container2 a::after {
+    content: "2024";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 132, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+    transition-delay: 0.25s;
+}
+
+.container2 a:hover:before, a:hover:after{
+    transform: rotateX(0);
+}
+
+.container3{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif; 
+}
+
+.container3 a{
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 1rem;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 2px;
+    position: relative;
+    width: 300px;
+    height: 60px;
+    transition: all 0.2s;
+    color: rgb(255, 255, 255);
+}
+
+.container3 a::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+    mix-blend-mode: multiply;
+    transform-origin: top;
+    z-index: 1;
+    transition:all 0.2s ;
+    /* transform: rotateX(105deg); */
+    
+}
+
+.container3 a::after{
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 100%;
+    height: 100%;
+    background: rgb(215, 243, 7);
+    transform-origin: bottom;
+    z-index: -1;
+    transition: all 0.2s;
+    /* transform: rotateX(105deg); */
+}
+
+.container3 a:hover::before{
+    top: -6x;
+    left: 0;
+    transform: perspective(1000px) rotateX(75deg);
+    
+}
+
+.container3 a:hover::after{
+    top: 6px;
+    left: 0;
+    transform: perspective(1000px) rotateX(-75deg);
+    
+}
+
+.container3 a:hover{
+    color: black;
+
+}
