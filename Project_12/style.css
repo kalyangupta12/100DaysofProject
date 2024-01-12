@@ -1,1 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfbfb;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.heading{
+    font-size: 10rem;
+    font-weight: 900;   
+    background-image:url(https://images.unsplash.com/photo-1549834146-0702b38f1bed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 0.75rem rgb(226, 0, 45));
+}
