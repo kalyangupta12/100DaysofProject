@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Background Color Changer</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: #3498db;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+
+      h2 {
+        color: #fff;
+        font-weight: 200;
+        margin-top: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background: #ffffff;
+        border: 2px solid #efe5e5;
+        color: #0e0101;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+      }
+
+      button:hover {
+        background: #27ae5f00;
+        cursor: pointer;
+        color: #fff;
+        
+      }
+
+      button:active {
+        transform: scale(0.95);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">Change Color</button>
+    <div>
+      <h2>
+        RGB Code: <span id="rgbCode">rgb(52, 152, 219)</span>
+        <br />
+        Hex Code: <span id="hexCode">#3498db</span>
+      </h2>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
